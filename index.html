@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+    <html lang="id" class="scroll-smooth">
+        <head>
+            <meta charset="UTF-8">
+
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+            <!--Google Console-->
+            <meta name="google-site-verification" content="MndRt8RBmDxdo7Gx_s9xnJRkZhk7J5PbfdFHQHk7DxM" />
+
+            <!-- Google Analytics tag (gtag.js) -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-PCMVGVF9R6"></script>
+
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag() { dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-PCMVGVF9R6');
+            </script>
+              
+            <!-- Import font Roboto all weight dari Google Fonts -->
+            <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+              
+            <!--Fav Icon-->
+            <link rel="icon" type="image/svg+xml" href="img/icon/piksma_media.svg">
+
+            <!--Judul Tab Website-->
+            <title>Piksma Media | Digital Printing, Fotocopy & Cutting Sticker di Bandar Lampung</title>
+
+            <!-- Deskripsi Website (max 160 karakter) -->
+            <meta name="description"
+                content="Jasa digital printing, percetakan, fotocopy, & cutting sticker profesional di Bandar Lampung. Melayani semua kebutuhan percetakan. Hubungi 0896-3419-6660." />
+
+            <!-- Kata Kunci SEO -->
+            <meta name="keywords"
+              content="percetakan bandar lampung, digital printing bandar lampung, fotocopy bandar lampung, cutting sticker bandar lampung, 
+              print dokumen bandar lampung, cetak banner bandar lampung, cetak sticker bandar lampung, cetak poster bandar lampung,
+              cetak brosur bandar lampung, cetak undangan bandar lampung, cetak kartu nama bandar lampung,
+              cetak sertifikat bandar lampung, print warna bandar lampung, percetakan murah bandar lampung,
+              percetakan terdekat bandar lampung, piksma media, piksmamedia, piksma media bandar lampung" />
+
+            <!-- Nama Pemilik -->
+            <meta name="author" content="Piksma Media" />
+
+            <!-- Open Graph -->
+            <meta property="og:title" content="Piksma Media - Digital Printing, Fotocopy & Cutting Sticker" />
+            <meta property="og:description"
+                  content="Profesional Digital Printing, Fotocopy, & Cutting Sticker: jasa cetak, percetakan, fotocopy, dan cutting sticker." />
+            <meta property="og:image" content="https://satriafdesign.my.id/img/preview.jpg" />
+            <meta property="og:url" content="https://satriafdesign.my.id" />
+            <meta property="og:type" content="website" />
+
+            <!-- Twitter Card -->
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta name="twitter:title"
+                  content="Piksma Media - Digital Printing, Fotocopy & Cutting Sticker" />
+            <meta name="twitter:description"
+                  content="Solusi visual terpercaya: jasa cetak, branding, dan cutting sticker" />
+            <meta name="twitter:image" content="https://satriafdesign.my.id/img/preview.jpg" /> 
+
+            <!-- Canonical URL -->
+            <link rel="canonical" href="https://satriafdesign.my.id" />
+
+            <!--CSS Framework-->
+            <script src="https://cdn.tailwindcss.com"></script>
+
+            <!--CSS style-->
+            <style>   
+                /* Reset Global */
+                body.loading {
+                  visibility: hidden;
+                }
+
+                /* Animasi saat muncul */
+                .animate-fade-up {
+                  opacity: 0;
+                  transform: translateY(20px);
+                  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+                }
+
+                /* Animasi saat muncul */
+                .animate-fade-up.show {
+                  opacity: 1;
+                  transform: translateY(0);
+                }
+            </style>
+
+            <script type="application/ld+json">
+                {
+                    "@context": "https://schema.org",
+                    "@type": "LocalBusiness",
+                    "name": "Piksma Media",
+                    "image": "https://satriafdesign.my.id/img/icon/logo.svg",
+                    "url": "https://satriafdesign.my.id",
+                    "telephone": "089634196660",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "addressLocality": "Bandar Lampung",
+                        "addressCountry": "ID"
+                        }
+                }
+              </script>
+        </head>
+
+    <body class="loading bg-white text-[#4D4D4D]">
+
+        <!-- Navbar -->
+        <header
+        class="fixed top-0 left-0 w-full px-6 py-4 bg-white/70 backdrop-blur-2xl shadow-[0_2px_8px_rgba(0,0,0,0.08)]"
+        style="font-family: 'Roboto', sans-serif; font-weight: 500; z-index: 20;">
+
+            <div class="flex items-center justify-between">
+
+                <!-- Logo -->
+                <div class="flex items-center space-x-4">
+                    <a href="#home" class="flex items-center space-x-3">
+                    <img src="img/icon/piksmamedia_logo_nav.svg" alt="Logo Piksma Media Bandar Lampung"
+                        class="h-5 sm:h-5 md:h-6 lg:h-7 w-auto transition-all duration-200 hover:brightness-110">
+                    </a>
+                </div>
+
+                <!-- Hamburger -->
+                <button id="menu-btn" class="w-8 h-8 flex flex-col justify-center items-center gap-[5px] md:hidden relative -top-[1px]">
+                    <span class="absolute left-0 top-1/2 w-6 h-[3px] bg-[#4D4D4D] -translate-y-2 transition-all duration-300 origin-center rounded-full"></span>
+                    <span class="absolute left-0 top-1/2 w-6 h-[3px] bg-[#4D4D4D] transition-all duration-300 origin-center rounded-full"></span>
+                    <span class="absolute left-0 top-1/2 w-6 h-[3px] bg-[#4D4D4D] translate-y-2 transition-all duration-300 origin-center rounded-full"></span>
+                </button>
+
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex items-center space-x-6">
+                    <a href="#services" class="text-[#4D4D4D] hover:text-gray-500 text-base ">Services</a>
+                    <a href="#gallery" class="text-[#4D4D4D] hover:text-gray-500 text-base">Gallery</a>
+                    <a href="#about" class="text-[#4D4D4D] hover:text-gray-500 text-base">About</a>
+                    <a href="#collection" class="text-[#4D4D4D] hover:text-gray-500 text-base">Collection</a>
+                    <a href="#contact" class="text-[#4D4D4D] hover:text-gray-500 text-base">Contact</a>
+
+                    <div class="flex space-x-4 pl-4 items-center">
+                        <a href="https://wa.me/6289634196660"  target="_blank" rel="noopener noreferrer"
+                            class="flex items-center gap-2 bg-gradient-to-b from-[#25D366] to-[#1DA851] text-white text-sm px-4 py-2.5 rounded-full shadow-md shadow-black/20 hover:brightness-110 active:translate-y-[1px] active:shadow-sm transition-all duration-200">
+                            <img src="img/icon/piksmamedia_whatsappnav.svg" class="w-5 h-5" alt="Piksma Media WhatsApp" title="Piksma Media WhatsApp"/>
+                            <span style="font-family: 'Roboto', sans-serif; font-weight: 700">Hubungi Kami</span>
+                        </a>
+
+                        <a href="https://instagram.com/piksmamedia" target="_blank" rel="noopener noreferrer">
+                            <img src="img/icon/piksmamedia_instagramnav.svg" alt="Piksma Media Instagram" title="Piksma Media Instagram"
+                            class="w-5 h-5 transition-all duration-200 hover:brightness-150">
+                        </a>
+
+                        <a href="https://facebook.com/satria.ferdiansyah.sf" target="_blank" rel="noopener noreferrer">
+                            <img src="img/icon/piksmamedia_facebooknav.svg" alt="Piksma Media Facebook" title="Piksma Media Facebook"
+                            class="w-5 h-5 transition-all duration-200 hover:brightness-150">
+                        </a>
+                    </div>
+                </nav>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu"
+                class="absolute top-full left-0 w-full bg-white/95 z-50 text-center text-[#4D4D4D] md:hidden shadow-md overflow-hidden max-h-0 opacity-0 -translate-y-2 transition-all duration-300 ease-in-out"
+                style="font-family: 'Roboto', sans-serif; font-weight: 500; z-index: 20;">
+
+                <div class="py-6 space-y-4 text-base">
+                    <a href="#services" class="block text-[#4D4D4D] hover:text-gray-500">Services</a>
+                    <a href="#gallery" class="block text-[#4D4D4D] hover:text-gray-500">Gallery</a>
+                    <a href="#about" class="block text-[#4D4D4D] hover:text-gray-500">About</a>
+                    <a href="#collection" class="block text-[#4D4D4D] hover:text-gray-500">Collection</a>
+                    <a href="#contact" class="block text-[#4D4D4D] hover:text-gray-500">Contact</a>
+
+                    <div class="flex justify-center space-x-4 pt-4 border-t border-gray-300 items-center">
+                        <a href="https://wa.me/6289634196660"  target="_blank" rel="noopener noreferrer"
+                            class="flex items-center gap-2 bg-gradient-to-b from-[#25D366] to-[#1DA851] text-white text-sm px-4 py-2.5 rounded-full shadow-md shadow-black/20 hover:brightness-110 active:translate-y-[1px] active:shadow-sm transition-all duration-200">
+                            <img src="img/icon/piksmamedia_whatsappnav.svg" alt="Piksma Media WhatsApp" title="Piksma Media WhatsApp" class="w-5 h-5" />
+                            <span style="font-family: 'Roboto', sans-serif; font-weight: 700">Hubungi Kami</span>
+                        </a>
+
+                        <a href="https://instagram.com/piksmamedia" target="_blank" rel="noopener noreferrer">
+                            <img src="img/icon/piksmamedia_instagramnav.svg"  alt="Piksma Media Instagram" title="Piksma Media Instagram"
+                                class="w-5 h-5 transition-all duration-200 hover:brightness-150">
+                        </a>
+
+                        <a href="https://facebook.com/satria.ferdiansyah.sf" target="_blank" rel="noopener noreferrer">
+                            <img src="img/icon/piksmamedia_facebooknav.svg" alt="Piksma Media Facebook" title="Piksma Media Facebook"
+                                class="w-5 h-5 transition-all duration-200 hover:brightness-150">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+
+        <!-- Hero Section -->
+        <section id="home"
+            class="h-screen flex flex-col justify-center items-center text-center px-4 bg-gradient-to-b from-[#FFFFFF] to-[#F6F6F6]">
+            <h1
+                class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#4D4D4D] leading-tight max-w-5xl"
+                style="font-family: 'Roboto', sans-serif;">
+                Pusat Digital Printing, Fotocopy & Cutting Sticker <br> Bandar Lampung
+            </h1>
+
+            <p
+                class="mt-4 text-sm sm:text-base md:text-lg text-gray-600 max-w-2xl"
+                style="font-family: 'Roboto', sans-serif;">
+                Solusi percetakan, media promosi, dan branding profesional untuk UMKM, instansi, bisnis, dan perusahaan.
+            </p>
+
+            <img
+                src="img/icon/piksmamedia_logo.svg"
+                alt="Piksma Media Logo Bandar Lampung"
+                title="Logo Piksma Media Bandar Lampung"
+                class="w-full max-w-[250px] sm:max-w-[300px] md:max-w-[360px] lg:max-w-[420px] my-8 mx-auto" />
+
+            <p
+                class="text-sm sm:text-base md:text-lg text-[#4D4D4D] mb-8"
+                style="font-family: 'Roboto', sans-serif; font-weight: 500;">
+                Digital Printing • Fotocopy • Cutting Sticker
+            </p>
+
+            <a href="#services"
+                class="bg-[#0071E3] hover:bg-blue-700 text-white px-8 py-3 rounded-full text-sm md:text-base font-semibold transition-all duration-200 shadow-lg shadow-blue-500/20">
+                Cetak Sekarang
+            </a>
+        </section>
+
+        <!-- Backdrop Blur -->
+        <div
+            id="backdrop"
+            class="fixed inset-0 min-h-screen pt-[64px] backdrop-blur-2xl bg-black/50 opacity-0 pointer-events-none transition-all duration-500 ease-out z-10">
+        </div>
+
+        <!-- Hamburger Script -->
+        <script>
+            const btn = document.getElementById('menu-btn');
+            const lines = btn.querySelectorAll('span');
+            const menu = document.getElementById('mobile-menu');
+            const backdrop = document.getElementById('backdrop');
+            const menuLinks = document.querySelectorAll('#mobile-menu a[href^="#"]');
+
+            function closeMenu() {
+            menu.classList.add('max-h-0', 'opacity-0', '-translate-y-2');
+            menu.classList.remove('max-h-[500px]', 'opacity-100', 'translate-y-0');
+
+            backdrop.classList.add('opacity-0', 'pointer-events-none');
+            backdrop.classList.remove('opacity-100');
+
+            // RESET ICON KE HAMBURGER
+            lines[0].classList.remove('rotate-45');
+            lines[1].classList.remove('opacity-0');
+            lines[2].classList.remove('-rotate-45');
+
+            lines[0].classList.add('-translate-y-2');
+            lines[2].classList.add('translate-y-2');
+            }
+
+            btn.addEventListener('click', () => {
+            const isOpen = menu.classList.contains('opacity-100');
+
+            if (!isOpen) {
+                // Animasi jadi X
+                lines[0].classList.remove('-translate-y-2');
+                lines[2].classList.remove('translate-y-2');
+
+                lines[0].classList.add('rotate-45');
+                lines[1].classList.add('opacity-0');
+                lines[2].classList.add('-rotate-45');
+
+
+                backdrop.classList.remove('opacity-0', 'pointer-events-none');
+                backdrop.classList.add('opacity-100');
+
+                requestAnimationFrame(() => {
+                menu.classList.remove('max-h-0', 'opacity-0', '-translate-y-2');
+                menu.classList.add('max-h-[500px]', 'opacity-100', 'translate-y-0');
+                });
+            } else {
+                // Balik ke hamburger
+                lines[0].classList.remove('rotate-45', 'top-3');
+                lines[1].classList.remove('opacity-0');
+                lines[2].classList.remove('-rotate-45', 'top-3');
+
+                closeMenu();
+            }
+            });
+
+            menuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+            closeMenu(); // menutup menu & backdrop
+            });
+            });
+
+            window.addEventListener('resize', () => {
+            if (window.innerWidth >= 768) {
+                closeMenu();
+            }
+            });
+
+            // RESET BACKDROP BLUR LOGO NAVBAR
+            const logoLink = document.querySelector('header a[href="#home"]');
+            logoLink.addEventListener('click', () => {
+            if (window.innerWidth < 768) {
+                closeMenu();
+            }
+            });
+
+            // Klik backdrop untuk tutup menu
+            backdrop.addEventListener('click', () => {
+            closeMenu();
+            });
+        </script>
+      
+        <!-- PRODUK UNGGULAN -->
+
+        <section class="py-16 md:py-20 bg-[linear-gradient(180deg,#B11226,#7A1212)]">
+
+            <div class="max-w-6xl mx-auto px-4 sm:px-6">
+
+                <div class="bg-white rounded-[32px] overflow-hidden shadow-[0_10px_40px_rgba(0,0,0,0.08)] animate-fade-up">
+
+                    <div class="grid md:grid-cols-2 items-center">
+
+                        <!-- Foto Produk -->
+                        <div class="p-6 md:p-8">
+
+                            <div class="aspect-square overflow-hidden rounded-2xl">
+
+                                <img
+                                    src="img/piksmamedia_promosi.png"
+                                    alt="Piksma Media Promosi"
+                                    title="Piksma Media Promosi"
+                                    class="w-full h-full object-cover hover:scale-105 transition duration-500">
+
+                            </div>
+
+                        </div>
+
+                        <!-- Konten -->
+                        <div class="p-8 md:p-12 text-center md:text-left">
+
+                            <span
+                                class="uppercase tracking-[0.25em] text-[#B11226] text-xs md:text-sm font-semibold">
+                                Piksma Media
+                            </span>
+
+                            <h2
+                                class="mt-4 text-3xl md:text-5xl font-bold text-[#4D4D4D] leading-tight">
+                                Solusi Cetak & Branding
+                                <span class="block text-[#B11226]">
+                                    untuk Bisnis Anda
+                                </span>
+                            </h2>
+
+                            <div class="w-16 h-px bg-[#B11226] mx-auto md:mx-0 mt-5 mb-6"></div>
+
+                            <p class="text-gray-600 leading-7">
+                                Kami melayani kebutuhan digital printing, fotocopy, cutting sticker, branding, banner, sticker, dan berbagai media promosi berkualitas untuk UMKM hingga perusahaan.
+                            </p>
+
+                            <a
+                                href="#gallery"
+                                class="inline-flex items-center gap-2 mt-8 px-7 py-3 rounded-full bg-[#B11226] hover:bg-[#961020] text-white transition-all duration-300 shadow-md">
+
+                                Lihat Gallery
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+       </section>
+
+      
+        <!-- Services Section -->
+        <section id="services" class="bg-white pt-8 pb-14 md:pt-16 md:pb-20">
+            <div class="max-w-7xl mx-auto px-6">
+
+                <h2
+                    class="text-3xl md:text-3xl text-center mb-12 text-[#4D4D4D] animate-fade-up"
+                    style="font-family: 'Roboto', sans-serif; font-weight: 700;">
+                    Services
+                </h2>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+
+                    <div class="bg-gradient-to-b from-[#FAFAFB] to-[#FCFCFD] p-6 rounded-3xl shadow-md shadow-black/10 text-center animate-fade-up">
+                        <img src="img/piksmamedia_print&fotocopy.png" class="mx-auto mb-4 h-24" loading="lazy" decoding="async" alt="Piksma Media Print & Fotocopy" title="Piksma Media Print & Fotocopy"/>
+                        <h3 class="font-semibold text-xl text-[#4D4D4D]"
+                            style="font-family: 'Roboto', sans-serif; font-weight: 500;">
+                            Fotocopy & Print</h3>
+                        <p class="text-base mt-2 text-gray-600"
+                            style="font-family: 'Roboto', sans-serif; font-weight: 400;">
+                            Cetak Dokumen, Fotocopy, dan Tugas
+                        </p>
+                    </div>
+
+                    <div class="bg-gradient-to-b from-[#FAFAFB] to-[#FCFCFD] p-6 rounded-3xl shadow-md shadow-black/10 text-center animate-fade-up">
+                        <img src="img/piksmamedia_banner.png" class="mx-auto mb-4 h-24" loading="lazy" decoding="async" alt="Piksma Media Banner" title="Piksma Media Banner"/>
+                        <h3 class="font-semibold text-xl text-[#4D4D4D]"
+                            style="font-family: 'Roboto', sans-serif; font-weight: 500;">Cetak Banner</h3>
+                        <p class="text-base mt-2 text-gray-600"
+                            style="font-family: 'Roboto', sans-serif; font-weight: 400;">
+                            Banner, Roll Banner, X-Banner
+                        </p>
+                    </div>
+
+                    <div class="bg-gradient-to-b from-[#FAFAFB] to-[#FCFCFD] p-6 rounded-3xl shadow-md shadow-black/10 text-center animate-fade-up">
+                        <img src="img/piksmamedia_sticker.png" class="mx-auto mb-4 h-24" loading="lazy" decoding="async" alt="Piksma Media Sticker" title="Piksma Media Sticker"/>
+                        <h3 class="font-semibold text-xl text-[#4D4D4D]"
+                            style="font-family: 'Roboto', sans-serif; font-weight: 500;">Cetak Sticker</h3>
+                        <p class="text-base mt-2 text-gray-600"
+                            style="font-family: 'Roboto', sans-serif; font-weight: 400;">
+                            Chromo A3, Vinyl, Sticker Transparan
+                        </p>
+                    </div>
+
+                    <div class="bg-gradient-to-b from-[#FAFAFB] to-[#FCFCFD] p-6 rounded-3xl shadow-md shadow-black/10 text-center animate-fade-up">
+                        <img src="img/piksmamedia_undangan.png" class="mx-auto mb-4 h-24" loading="lazy" decoding="async" alt="Piksma Media Undangan" title="Piksma Media Undangan"/>
+                        <h3 class="font-semibold text-xl text-[#4D4D4D]"
+                            style="font-family: 'Roboto', sans-serif; font-weight: 500;">Undangan & Brosur</h3>
+                        <p class="text-base mt-2 text-gray-600"
+                            style="font-family: 'Roboto', sans-serif; font-weight: 400;">
+                            Undangan Acara, Brosur, Kartu Ucapan
+                        </p>
+                    </div>
+
+                    <div class="bg-gradient-to-b from-[#FAFAFB] to-[#FCFCFD] p-6 rounded-3xl shadow-md shadow-black/10 text-center animate-fade-up">
+                        <img src="img/piksmamedia_cetakfoto.png" class="mx-auto mb-4 h-24" loading="lazy" decoding="async" alt="Piksma Media Cetak Foto" title="Piksma Media Cetak Foto"/>
+                        <h3 class="font-semibold text-xl text-[#4D4D4D]"
+                            style="font-family: 'Roboto', sans-serif; font-weight: 500;">Cetak Foto</h3>
+                        <p class="text-base mt-2 text-gray-600"
+                            style="font-family: 'Roboto', sans-serif; font-weight: 400;">
+                            Cetak Foto, Bingkai, Laminating
+                        </p>
+                    </div>
+
+                    <div class="bg-gradient-to-b from-[#FAFAFB] to-[#FCFCFD] p-6 rounded-3xl shadow-md shadow-black/10 text-center animate-fade-up">
+                        <img src="img/piksmamedia_cuttingsticker.png" class="mx-auto mb-4 h-24" loading="lazy" decoding="async" alt="Piksma Media Cutting Sticker" title="Piksma Media Cutting Sticker"/>
+                        <h3 class="font-semibold text-xl text-[#4D4D4D]"
+                            style="font-family: 'Roboto', sans-serif; font-weight: 500;">Cutting Sticker</h3>
+                        <p class="text-base mt-2 text-gray-600"
+                            style="font-family: 'Roboto', sans-serif; font-weight: 400;">
+                            Tulisan, Logo, Ornamen
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="bg-gradient-to-b from-[#F6F6F6] to-[#FFFFFF] pt-8 pb-14 md:pt-16 md:pb-20">
+            <div class="max-w-7xl mx-auto px-6">
+
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-3xl font-bold text-[#4D4D4D] mb-4 animate-fade-up"
+                        style="font-family: 'Roboto', sans-serif; font-weight: 700;">
+                        Gallery
+                    </h2>
+                    <p class="text-gray-500 text-base md:text-lg animate-fade-up"
+                        style="font-family: 'Roboto', sans-serif; font-weight: 500;">
+                        Setiap hasil adalah wujud komitmen kami dalam menghadirkan kualitas terbaik.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                    <!-- Baris 1 -->
+                    <div class="group relative overflow-hidden rounded-3xl cursor-pointer animate-fade-up" onclick="openModal(this)">
+                        <img src="img/piksmamedia_hasilprint.png" alt="Piksma Media Hasil Print" title="Piksma Media Hasil Print"
+                            class="w-full h-72 object-cover transition duration-700 ease-in-out group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-500 flex items-end p-6">
+                            <h3 class="text-white text-lg"
+                                style="font-family: 'Roboto', sans-serif; font-weight: 500;">Fotocopy & Print</h3>
+                        </div>
+                    </div>
+
+                    <div class="group relative overflow-hidden rounded-3xl cursor-pointer animate-fade-up" onclick="openModal(this)">
+                        <img src="img/piksmamedia_hasilbanner.png" alt="Piksma Media Hasil Banner" title="Piksma Media Hasil Banner"
+                            class="w-full h-72 object-cover transition duration-700 ease-in-out group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-500 flex items-end p-6">
+                            <h3 class="text-white text-lg"
+                                style="font-family: 'Roboto', sans-serif; font-weight: 500;">Banner</h3>
+                        </div>
+                    </div>
+
+                    <div class="group relative overflow-hidden rounded-3xl cursor-pointer animate-fade-up" onclick="openModal(this)">
+                        <img src="img/piksmamedia_hasilsticker.png" alt="Piksma Media Hasil Sticker" title="Piksma Media Hasil Sticker"
+                                class="w-full h-72 object-cover transition duration-700 ease-in-out group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-500 flex items-end p-6">
+                            <h3 class="text-white text-lg"
+                                style="font-family: 'Roboto', sans-serif; font-weight: 500;">Sticker</h3>
+                        </div>
+                    </div>
+
+                    <!-- Baris 2 -->
+                    <div class="group relative overflow-hidden rounded-3xl cursor-pointer animate-fade-up" onclick="openModal(this)">
+                        <img src="img/piksmamedia_hasilbrosur.png" alt="Piksma Media Hasil Brosur" title="Piksma Media Hasil Brosur"
+                            class="w-full h-72 object-cover transition duration-700 ease-in-out group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-500 flex items-end p-6">
+                            <h3 class="text-white text-lg"
+                                style="font-family: 'Roboto', sans-serif; font-weight: 500;">Undangan • Brosur</h3>
+                        </div>
+                    </div>
+
+                    <div class="group relative overflow-hidden rounded-3xl cursor-pointer animate-fade-up" onclick="openModal(this)">
+                        <img src="img/piksmamedia_hasilcetakfoto.png" alt="Piksma Media Hasil Cetak Foto" title="Piksma Media Hasil Cetak Foto"
+                            class="w-full h-72 object-cover transition duration-700 ease-in-out group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-500 flex items-end p-6">
+                            <h3 class="text-white text-lg"
+                                style="font-family: 'Roboto', sans-serif; font-weight: 500;">Cetak Foto</h3>
+                        </div>
+                    </div>
+
+                    <div class="group relative overflow-hidden rounded-3xl cursor-pointer animate-fade-up" onclick="openModal(this)">
+                        <img src="img/piksmamedia_hasilcetaksertifikat.png" alt="Piksma Media Hasil Cetak Sertifikat" title="Piksma Media Hasil Cetak Sertifikat"
+                            class="w-full h-72 object-cover transition duration-700 ease-in-out group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-500 flex items-end p-6">
+                            <h3 class="text-white text-lg"
+                                style="font-family: 'Roboto', sans-serif; font-weight: 500;">Poster • Sertifikat</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about"
+            class="relative overflow-hidden bg-gradient-to-b from-[#B11226] to-[#7A1212] py-20 md:py-28">
+
+            <!-- Background Decoration -->
+            <div class="absolute inset-0 pointer-events-none overflow-hidden">
+                <div class="absolute -top-32 -left-32 w-80 h-80 bg-white/10 rounded-full blur-3xl"></div>
+                <div class="absolute bottom-0 -right-32 w-96 h-96 bg-red-400/10 rounded-full blur-3xl"></div>
+            </div>
+
+            <div class="relative max-w-7xl mx-auto px-6">
+
+                <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+                    <!-- LEFT -->
+                    <div>
+
+                        <!-- Logo -->
+                        <div class="mb-8 animate-fade-up">
+                            <img src="img/icon/piksmamedia_logoabout.svg"
+                                alt="Logo Piksma Media Bandar Lampung"
+                                title="Logo Piksma Media Bandar Lampung"
+                                class="h-10 md:h-12 w-auto transition-transform duration-300 hover:scale-105">
+                        </div>
+                        
+                        <!-- Label -->
+                        <div class="flex items-center gap-3 mb-5 animate-fade-up">
+                            <div class="w-10 h-[2px] bg-white"></div>
+                            <span class="uppercase tracking-[0.3em] text-white/70 text-sm font-semibold">
+                                Tentang Kami
+                            </span>
+                        </div>
+
+                        <!-- Heading -->
+                        <h2 class="text-5xl md:text-6xl font-black text-white leading-tight animate-fade-up"
+                            style="font-family:'Roboto',sans-serif;">
+
+                            Percetakan Modern
+
+                            <span class="block text-white mt-2">
+                                untuk Bisnis yang Terus Bertumbuh
+                            </span>
+
+                        </h2>
+
+                        <div class="w-24 h-1 bg-white rounded-full mt-8 mb-8 animate-fade-up"></div>
+
+                        <!-- Description -->
+                        <p class="text-white text-lg leading-8 animate-fade-up">
+                            <strong>PIKSMA MEDIA</strong> adalah penyedia layanan
+                            digital printing, fotocopy, cutting sticker, dan berbagai
+                            kebutuhan percetakan di Bandar Lampung.
+
+                            Kami berkomitmen memberikan hasil cetak berkualitas tinggi,
+                            pengerjaan cepat, harga kompetitif, serta pelayanan yang
+                            profesional untuk UMKM, instansi, sekolah, hingga perusahaan.
+                        </p>
+
+                        <!-- Button -->
+                        <div class="mt-10 animate-fade-up">
+
+                            <a href="#contact"
+                                class="inline-flex items-center gap-3 bg-white text-[#B11226] px-8 py-4 rounded-full font-semibold shadow-xl hover:scale-105 hover:shadow-2xl transition-all duration-300">
+
+                                Konsultasi Sekarang
+
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="w-5 h-5"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor">
+
+                                    <path stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M17 8l4 4m0 0l-4 4m4-4H3" />
+
+                                </svg>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <!-- RIGHT -->
+                    <div class="relative">
+
+                        <!-- Watermark Logo -->
+                        <div class="absolute inset-0 flex justify-center items-center opacity-5 pointer-events-none">
+
+                            <img src="img/icon/logo_about.svg"
+                                alt=""
+                                class="w-80 md:w-96">
+
+                        </div>
+
+                        <!-- Cards -->
+                        <div class="relative grid grid-cols-2 gap-6">
+
+                            <div class="bg-white/10 backdrop-blur-xl rounded-3xl p-7 border border-white/10 shadow-xl hover:-translate-y-2 hover:bg-white/15 transition-all duration-300 animate-fade-up">
+
+                                <h3 class="text-4xl font-bold text-white">
+                                    500+
+                                </h3>
+
+                                <p class="mt-2 text-white/80">
+                                    Pesanan Selesai
+                                </p>
+
+                            </div>
+
+                            <div class="bg-white/10 backdrop-blur-xl rounded-3xl p-7 border border-white/10 shadow-xl hover:-translate-y-2 hover:bg-white/15 transition-all duration-300 animate-fade-up">
+
+                                <h3 class="text-3xl font-bold text-white">
+                                    Terpercaya
+                                </h3>
+
+                                <p class="mt-2 text-white/80">
+                                    Kualitas Terjamin
+                                </p>
+
+                            </div>
+
+                            <div class="bg-white/10 backdrop-blur-xl rounded-3xl p-7 border border-white/10 shadow-xl hover:-translate-y-2 hover:bg-white/15 transition-all duration-300 animate-fade-up">
+
+                                <h3 class="text-3xl font-bold text-white">
+                                    Profesional
+                                </h3>
+
+                                <p class="mt-2 text-white/80">
+                                    Tim Berpengalaman
+                                </p>
+
+                            </div>
+
+                            <div class="bg-white/10 backdrop-blur-xl rounded-3xl p-7 border border-white/10 shadow-xl hover:-translate-y-2 hover:bg-white/15 transition-all duration-300 animate-fade-up">
+
+                                <h3 class="text-4xl font-bold text-white">
+                                    24/7
+                                </h3>
+
+                                <p class="mt-2 text-white/80">
+                                    Konsultasi Online
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Collection Section -->
+        <section id="collection" class="bg-white pt-8 pb-14 md:pt-16 md:pb-20 px-6 text-center">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+                <h2 class="text-3xl md:text-4xl font-bold text-[#4D4D4D] mb-4 animate-fade-up"
+                    style="font-family: 'Roboto', sans-serif; font-weight: 700;">
+                    Collection
+                </h2>
+            
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Item 1-->
+                    <div class="group relative overflow-hidden rounded-3xl bg-white transition duration-500 p-4 animate-fade-up">
+                        <img src="img/icon/piksmamedia_blackboxmockup.svg" alt="Piksma Media Black Box Mockup" title="Piksma Media Black Box Mockup"
+                            loading="lazy"
+                            decoding="async"
+                            class="mx-auto my-4 w-3/4 h-auto object-contain transition duration-700 group-hover:scale-105 rounded-xl">
+                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-500 flex items-end p-6 rounded-3xl">
+                            <h3 class="text-white text-lg"
+                                style="font-family: 'Roboto', sans-serif; font-weight: 500;">
+                                Premium Website Service
+                            </h3>
+                        </div>
+                    </div>
+            
+                    <!-- Item 2-->
+                    <div class="group relative overflow-hidden rounded-3xl bg-white transition duration-500 p-4 animate-fade-up">
+                        <img src="img/icon/piksmamedia_whiteboxmockup.svg" alt="Piksma Media White Box Mockup" title="Piksma Media White Box Mockup"
+                            loading="lazy"
+                            decoding="async"
+                            class="mx-auto my-4 w-3/4 h-auto object-contain transition duration-700 group-hover:scale-105 rounded-xl">
+                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-500 flex items-end p-6 rounded-3xl">
+                            <h3 class="text-white text-lg"
+                                style="font-family: 'Roboto', sans-serif; font-weight: 500;">
+                                Premium Creative Service
+                            </h3>
+                        </div>
+                    </div>
+
+                     <!-- Item 3-->
+                    <div class="group relative overflow-hidden rounded-3xl bg-white transition duration-500 p-4 animate-fade-up">
+                        <img src="img/icon/piksmamedia_redboxmockup.svg" alt="Piksma Media Red Box Mockup" title="Piksma Media Red Box Mockup"
+                            loading="lazy"
+                            decoding="async"
+                            class="mx-auto my-4 w-3/4 h-auto object-contain transition duration-700 group-hover:scale-105 rounded-xl">
+                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-500 flex items-end p-6 rounded-3xl">
+                            <h3 class="text-white text-lg"
+                                style="font-family: 'Roboto', sans-serif; font-weight: 500;">
+                                Premium Printing Service
+                            </h3>
+                        </div>
+                    </div>
+            
+                    <!-- Kaos -->
+                    <div class="group relative overflow-hidden rounded-3xl bg-white transition duration-500 p-4 animate-fade-up">
+                        <img src="img/piksmamedia_tshirtmockup.png" alt="Piksma Media T-Shirt Mockup" title="Piksma Media T-Shirt Mockup"
+                            loading="lazy"
+                            decoding="async"
+                            class="w-full aspect-[4/3] object-cover transition duration-700 group-hover:scale-105 rounded-2xl">
+                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-500 flex items-end p-6 rounded-3xl">
+                            <h3 class="text-white text-lg"
+                                style="font-family: 'Roboto', sans-serif; font-weight: 500;">
+                                Wearable Brand Expression
+                            </h3>
+                        </div>
+                    </div>
+            
+                    <!-- Paper Bag -->
+                    <div class="group relative overflow-hidden rounded-3xl bg-white transition duration-500 p-4 animate-fade-up">
+                        <img src="img/piksmamedia_paperbagmockup.png" alt="Piksma Media Paper Bag Mockup" title="Piksma Media Paper Bag Mockup"
+                            loading="lazy"
+                            decoding="async"
+                            class="w-full aspect-[4/3] object-cover transition duration-700 group-hover:scale-105 rounded-2xl">
+                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-500 flex items-end p-6 rounded-3xl">
+                            <h3 class="text-white text-lg"
+                                style="font-family: 'Roboto', sans-serif; font-weight: 500;">
+                                Signature Visual Experience
+                            </h3>
+                        </div>
+                    </div>
+
+                    <!-- Card -->
+                    <div class="group relative overflow-hidden rounded-3xl bg-white transition duration-500 p-4 animate-fade-up">
+                        <img src="img/piksmamedia_businesscardmockup.png" alt="Piksma Media Business Card Mockup" title="Piksma Media Business Card Mockup"
+                            loading="lazy"
+                            decoding="async"
+                            class="w-full aspect-[4/3] object-cover transition duration-700 group-hover:scale-105 rounded-2xl">
+                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-500 flex items-end p-6 rounded-3xl">
+                            <h3 class="text-white text-lg"
+                                style="font-family: 'Roboto', sans-serif; font-weight: 500;">
+                                Premium Business  Card
+                            </h3>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer & Contact Section -->
+        <footer id="contact" class="bg-neutral-900 text-gray-300 pt-8 pb-14 md:pt-16 md:pb-20 px-6 flex flex-col">
+            <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10">
+                
+                <!-- Brand -->
+                <div>
+                  <h3 class="text-3xl text-white mb-2 animate-fade-up" style="font-family:'Roboto', sans-serif; font-weight: 700;">
+                    PIKSMA MEDIA
+                  </h3>
+                  <p class="text-sm text-gray-400 animate-fade-up"
+                     style="font-family: 'Roboto', sans-serif; font-weight: 400;">
+                        Solusi digital printing, fotocopy, dan cutting sticker<br>
+                        berkualitas untuk kebutuhan pribadi, bisnis, dan perusahaan.
+                  </p>
+                </div>
+                
+                <!-- Kontak -->
+                <div>
+                  <h4 class="text-white mb-3 animate-fade-up" style="font-family: 'Roboto', sans-serif; font-weight: 700;">
+                    Kontak Kami
+                  </h4>
+                  <ul class="space-y-2 text-sm">
+                    <li class="flex items-center gap-2 animate-fade-up">
+                      <img class="w-5 h-5" src="img/icon/piksmamedia_whatsapp.svg" alt="Piksma Media WhatsApp" title="Piksma Media WhatsApp" loading="lazy">
+                      <span style="font-family: 'Roboto', sans-serif; font-weight: 500;">WhatsApp:</span>
+                      <span class="text-gray-400" style="font-family: 'Roboto', sans-serif; font-weight: 400;">
+                        <a href="https://wa.me/6289634196660">0896-3419-6660</a>
+                      </span>
+                    </li>
+                    <li class="flex items-center gap-2 animate-fade-up">
+                      <img class="w-5 h-5" src="img/icon/piksmamedia_email.svg" alt="Piksma Media Email" title="Piksma Media Email" loading="lazy">
+                      <span style="font-family: 'Roboto', sans-serif; font-weight: 500;">
+                        <a href="mailto:piksmamedia@gmail.com">piksmamedia@gmail.com</a>
+                      </span>
+                    </li>
+                    <li class="flex items-center gap-2 animate-fade-up">
+                      <img class="w-5 h-5" src="img/icon/piksmamedia_openhours.svg" alt="Piksma Media Open Hours" title="Piksma Media Open Hours" loading="lazy">
+                      <span style="font-family: 'Roboto', sans-serif; font-weight: 500;">Jam Operasional:</span>
+                      <span class="text-gray-400" style="font-family: 'Roboto', sans-serif; font-weight: 400;">08:00 - 21:00 WIB</span>
+                    </li>
+                  </ul>
+                </div>
+                
+                <!-- Sosial & Maps -->
+                <div>
+                    <h4 class="text-white mb-3 animate-fade-up" style="font-family: 'Roboto', sans-serif; font-weight: 700;">
+                        Temukan Kami
+                    </h4>
+                      
+                    <!-- Sosial Media -->
+                    <div class="flex gap-4 mb-4 animate-fade-up">
+                        <a href="https://instagram.com/piksmamedia" class="hover:text-white transition"  target="_blank" rel="noopener noreferrer">Instagram</a>
+                        <a href="https://facebook.com/satria.ferdiansyah.sf" class="hover:text-white transition animate-fade-up"  target="_blank" rel="noopener noreferrer">Facebook</a>
+                    </div>
+                      
+                    <!-- MAPS -->
+                    <div class="w-full aspect-[16/9] rounded-2xl overflow-hidden shadow-lg mb-5 animate-fade-up">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248.23794954496933!2d105.30503457517315!3d-5.4462181642392125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e40db006845c3e1%3A0xa530153427aae886!2sPiksma%20Media!5e0!3m2!1sid!2sid!4v1783176418955!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="Lokasi Piksma Media di Google Maps"></iframe>
+                    </div>
+                      
+                      <!-- TOMBOL ala Mac -->
+                    <div class="text-center mt-2">
+                        <a href="https://maps.app.goo.gl/CYMp2zL69ngZ7EJ2A"  target="_blank" rel="noopener noreferrer"
+                            class="inline-block px-5 py-2 bg-[#0071E3] text-white font-semibold rounded-full shadow-sm hover:shadow-md text-base animate-fade-up">
+                            Buka di Google Maps
+                        </a>
+                    </div>
+                </div>
+            </div>
+          
+            <!-- COPYRIGHT -->
+            <div class="w-full text-center mt-8 text-xs text-white" style="font-family:'Roboto', sans-serif; font-weight:500;">
+                © 2026 PIKSMA MEDIA. All rights reserved.
+            </div>
+        </footer>
+
+        <script>
+            window.addEventListener('load', () => {
+            setTimeout(() => {
+                window.scrollTo(0, 0);
+                history.replaceState("", document.title, window.location.pathname + window.location.search);
+                document.body.classList.remove("loading");
+            }, 10);
+            });
+        </script>
+
+        <!-- Animasi Page-->
+        <script>
+            const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+                observer.unobserve(entry.target);
+                }
+            });
+            }, {
+            threshold: 0.15,
+            rootMargin: "0px 0px -60px 0px"
+            });
+        
+            document.querySelectorAll('.animate-fade-up').forEach(el => {
+            observer.observe(el);
+            });
+        </script>
+
+        <!-- Modal -->
+        <div id="galleryModal"
+            class="fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center opacity-0 pointer-events-none transition duration-500 z-50">
+
+            <img id="modalImage"
+                class="max-w-[90%] max-h-[85%] rounded-2xl shadow-2xl transform scale-95 transition duration-500">
+
+            <button onclick="closeModal()"
+                    class="absolute top-6 right-6 text-white text-3xl font-light hover:scale-110 transition">
+            &times;
+            </button>
+        </div>
+
+        <!-- Animasi Project Gallery -->
+        <script>
+            const modal = document.getElementById("galleryModal");
+            const modalImage = document.getElementById("modalImage");
+        
+            function openModal(element) {
+                const img = element.querySelector("img");
+                modalImage.src = img.src;
+        
+                modal.classList.remove("opacity-0", "pointer-events-none");
+                modalImage.classList.remove("scale-95");
+            }
+        
+            function closeModal() {
+                modal.classList.add("opacity-0", "pointer-events-none");
+                modalImage.classList.add("scale-95");
+            }
+        
+            modal.addEventListener("click", function(e) {
+                if (e.target === modal) {
+                closeModal();
+                }
+            });
+        </script>
+      
+        <!-- Agar Scroll Pas Dibawah Navbar -->
+        <script>
+        function setAnchorOffset() {
+            const header = document.querySelector("header");
+            const headerHeight = header.offsetHeight;
+            document.documentElement.style.scrollPaddingTop = headerHeight + "px";
+        }
+
+        window.addEventListener("load", setAnchorOffset);
+        window.addEventListener("resize", setAnchorOffset);
+        </script>
+    </body>
+    </html>
