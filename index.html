@@ -523,155 +523,165 @@
             </div>
         </section>
 
-        <!-- ABOUT -->
-        <section id="about"
-            class="relative overflow-hidden bg-gradient-to-b from-[#B11226] to-[#7A1212] py-20 md:py-28">
+<!-- ABOUT -->
+<section id="about"
+    class="relative overflow-hidden bg-gradient-to-b from-[#B11226] to-[#7A1212] py-16 sm:py-20 lg:py-28">
 
-            <!-- Background Decoration -->
-            <div class="absolute inset-0 pointer-events-none overflow-hidden">
-                <div class="absolute -top-32 -left-32 w-80 h-80 bg-white/10 rounded-full blur-3xl"></div>
-                <div class="absolute bottom-0 -right-32 w-96 h-96 bg-red-400/10 rounded-full blur-3xl"></div>
+    <!-- Background -->
+    <div class="absolute inset-0 pointer-events-none overflow-hidden">
+        <div class="absolute -top-32 -left-32 w-72 sm:w-80 h-72 sm:h-80 bg-white/10 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 -right-32 w-80 sm:w-96 h-80 sm:h-96 bg-red-400/10 rounded-full blur-3xl"></div>
+    </div>
+
+    <div class="relative max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
+
+        <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+
+            <!-- LEFT -->
+            <div>
+
+                <!-- Logo -->
+                <div class="mb-6 sm:mb-8 animate-fade-up">
+                    <img src="img/icon/piksmamedia_logoabout.svg"
+                        alt="Logo Piksma Media Bandar Lampung"
+                        class="h-9 sm:h-10 md:h-12 w-auto transition-transform duration-300 hover:scale-105">
+                </div>
+
+                <!-- Label -->
+                <div class="flex items-center gap-3 mb-4 sm:mb-5 animate-fade-up">
+
+                    <div class="w-10 h-[2px] bg-white"></div>
+
+                    <span class="uppercase tracking-[0.25em] text-white/70 text-xs sm:text-sm font-semibold">
+                        Tentang Kami
+                    </span>
+
+                </div>
+
+                <!-- Heading -->
+                <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white leading-tight break-words animate-fade-up"
+                    style="font-family:'Roboto',sans-serif;">
+
+                    Percetakan Modern
+
+                    <span class="block mt-2">
+                        untuk Bisnis yang Terus Bertumbuh
+                    </span>
+
+                </h2>
+
+                <div class="w-20 sm:w-24 h-1 bg-white rounded-full mt-6 sm:mt-8 mb-6 sm:mb-8 animate-fade-up"></div>
+
+                <!-- Description -->
+                <p class="text-white text-base sm:text-lg leading-7 sm:leading-8 animate-fade-up">
+
+                    <strong>PIKSMA MEDIA</strong> adalah penyedia layanan digital printing,
+                    fotocopy, cutting sticker, dan berbagai kebutuhan percetakan
+                    di Bandar Lampung.
+
+                    <br><br>
+
+                    Kami berkomitmen memberikan hasil cetak berkualitas tinggi,
+                    pengerjaan cepat, harga kompetitif, serta pelayanan profesional
+                    untuk UMKM, instansi, sekolah, hingga perusahaan.
+
+                </p>
+
+                <!-- Button -->
+                <div class="mt-8 sm:mt-10 animate-fade-up">
+
+                    <a href="#contact"
+                        class="inline-flex items-center gap-2 sm:gap-3 bg-white text-[#B11226] px-6 sm:px-8 py-3 sm:py-4 rounded-full text-sm sm:text-base font-semibold shadow-xl hover:scale-105 hover:shadow-2xl transition-all duration-300">
+
+                        Konsultasi Sekarang
+
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            class="w-5 h-5"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor">
+
+                            <path stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M17 8l4 4m0 0l-4 4m4-4H3" />
+
+                        </svg>
+
+                    </a>
+
+                </div>
+
             </div>
 
-            <div class="relative max-w-7xl mx-auto px-6">
+            <!-- RIGHT -->
+            <div class="relative">
 
-                <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <!-- Watermark -->
+                <div class="absolute inset-0 flex justify-center items-center opacity-5 pointer-events-none">
 
-                    <!-- LEFT -->
-                    <div>
+                    <img src="img/icon/logo_about.svg"
+                        alt=""
+                        class="w-56 sm:w-72 md:w-80 lg:w-96">
 
-                        <!-- Logo -->
-                        <div class="mb-8 animate-fade-up">
-                            <img src="img/icon/piksmamedia_logoabout.svg"
-                                alt="Logo Piksma Media Bandar Lampung"
-                                title="Logo Piksma Media Bandar Lampung"
-                                class="h-10 md:h-12 w-auto transition-transform duration-300 hover:scale-105">
-                        </div>
-                        
-                        <!-- Label -->
-                        <div class="flex items-center gap-3 mb-5 animate-fade-up">
-                            <div class="w-10 h-[2px] bg-white"></div>
-                            <span class="uppercase tracking-[0.3em] text-white/70 text-sm font-semibold">
-                                Tentang Kami
-                            </span>
-                        </div>
+                </div>
 
-                        <!-- Heading -->
-                        <h2 class="text-5xl md:text-6xl font-black text-white leading-tight animate-fade-up"
-                            style="font-family:'Roboto',sans-serif;">
+                <!-- Cards -->
+                <div class="relative grid grid-cols-2 gap-4 sm:gap-6">
 
-                            Percetakan Modern
+                    <!-- Card -->
+                    <div
+                        class="bg-white/10 backdrop-blur-xl rounded-2xl sm:rounded-3xl p-4 sm:p-6 border border-white/10 shadow-xl hover:-translate-y-2 hover:bg-white/15 transition-all duration-300">
 
-                            <span class="block text-white mt-2">
-                                untuk Bisnis yang Terus Bertumbuh
-                            </span>
+                        <h3 class="text-2xl sm:text-3xl md:text-4xl font-bold text-white">
+                            500+
+                        </h3>
 
-                        </h2>
-
-                        <div class="w-24 h-1 bg-white rounded-full mt-8 mb-8 animate-fade-up"></div>
-
-                        <!-- Description -->
-                        <p class="text-white text-lg leading-8 animate-fade-up">
-                            <strong>PIKSMA MEDIA</strong> adalah penyedia layanan
-                            digital printing, fotocopy, cutting sticker, dan berbagai
-                            kebutuhan percetakan di Bandar Lampung.
-
-                            Kami berkomitmen memberikan hasil cetak berkualitas tinggi,
-                            pengerjaan cepat, harga kompetitif, serta pelayanan yang
-                            profesional untuk UMKM, instansi, sekolah, hingga perusahaan.
+                        <p class="mt-2 text-xs sm:text-sm md:text-base text-white/80 leading-5">
+                            Pesanan Selesai
                         </p>
-
-                        <!-- Button -->
-                        <div class="mt-10 animate-fade-up">
-
-                            <a href="#contact"
-                                class="inline-flex items-center gap-3 bg-white text-[#B11226] px-8 py-4 rounded-full font-semibold shadow-xl hover:scale-105 hover:shadow-2xl transition-all duration-300">
-
-                                Konsultasi Sekarang
-
-                                <svg xmlns="http://www.w3.org/2000/svg"
-                                    class="w-5 h-5"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke="currentColor">
-
-                                    <path stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        stroke-width="2"
-                                        d="M17 8l4 4m0 0l-4 4m4-4H3" />
-
-                                </svg>
-
-                            </a>
-
-                        </div>
 
                     </div>
 
-                    <!-- RIGHT -->
-                    <div class="relative">
+                    <!-- Card -->
+                    <div
+                        class="bg-white/10 backdrop-blur-xl rounded-2xl sm:rounded-3xl p-4 sm:p-6 border border-white/10 shadow-xl hover:-translate-y-2 hover:bg-white/15 transition-all duration-300">
 
-                        <!-- Watermark Logo -->
-                        <div class="absolute inset-0 flex justify-center items-center opacity-5 pointer-events-none">
+                        <h3 class="text-lg sm:text-2xl md:text-3xl font-bold text-white leading-tight">
+                            Terpercaya
+                        </h3>
 
-                            <img src="img/icon/logo_about.svg"
-                                alt=""
-                                class="w-80 md:w-96">
+                        <p class="mt-2 text-xs sm:text-sm md:text-base text-white/80 leading-5">
+                            Kualitas Terjamin
+                        </p>
 
-                        </div>
+                    </div>
 
-                        <!-- Cards -->
-                        <div class="relative grid grid-cols-2 gap-6">
+                    <!-- Card -->
+                    <div
+                        class="bg-white/10 backdrop-blur-xl rounded-2xl sm:rounded-3xl p-4 sm:p-6 border border-white/10 shadow-xl hover:-translate-y-2 hover:bg-white/15 transition-all duration-300">
 
-                            <div class="bg-white/10 backdrop-blur-xl rounded-3xl p-7 border border-white/10 shadow-xl hover:-translate-y-2 hover:bg-white/15 transition-all duration-300 animate-fade-up">
+                        <h3 class="text-lg sm:text-2xl md:text-3xl font-bold text-white leading-tight">
+                            Profesional
+                        </h3>
 
-                                <h3 class="text-4xl font-bold text-white">
-                                    500+
-                                </h3>
+                        <p class="mt-2 text-xs sm:text-sm md:text-base text-white/80 leading-5">
+                            Tim Berpengalaman
+                        </p>
 
-                                <p class="mt-2 text-white/80">
-                                    Pesanan Selesai
-                                </p>
+                    </div>
 
-                            </div>
+                    <!-- Card -->
+                    <div
+                        class="bg-white/10 backdrop-blur-xl rounded-2xl sm:rounded-3xl p-4 sm:p-6 border border-white/10 shadow-xl hover:-translate-y-2 hover:bg-white/15 transition-all duration-300">
 
-                            <div class="bg-white/10 backdrop-blur-xl rounded-3xl p-7 border border-white/10 shadow-xl hover:-translate-y-2 hover:bg-white/15 transition-all duration-300 animate-fade-up">
+                        <h3 class="text-2xl sm:text-3xl md:text-4xl font-bold text-white">
+                            24/7
+                        </h3>
 
-                                <h3 class="text-3xl font-bold text-white">
-                                    Terpercaya
-                                </h3>
-
-                                <p class="mt-2 text-white/80">
-                                    Kualitas Terjamin
-                                </p>
-
-                            </div>
-
-                            <div class="bg-white/10 backdrop-blur-xl rounded-3xl p-7 border border-white/10 shadow-xl hover:-translate-y-2 hover:bg-white/15 transition-all duration-300 animate-fade-up">
-
-                                <h3 class="text-3xl font-bold text-white">
-                                    Profesional
-                                </h3>
-
-                                <p class="mt-2 text-white/80">
-                                    Tim Berpengalaman
-                                </p>
-
-                            </div>
-
-                            <div class="bg-white/10 backdrop-blur-xl rounded-3xl p-7 border border-white/10 shadow-xl hover:-translate-y-2 hover:bg-white/15 transition-all duration-300 animate-fade-up">
-
-                                <h3 class="text-4xl font-bold text-white">
-                                    24/7
-                                </h3>
-
-                                <p class="mt-2 text-white/80">
-                                    Konsultasi Online
-                                </p>
-
-                            </div>
-
-                        </div>
+                        <p class="mt-2 text-xs sm:text-sm md:text-base text-white/80 leading-5">
+                            Konsultasi Online
+                        </p>
 
                     </div>
 
@@ -679,7 +689,11 @@
 
             </div>
 
-        </section>
+        </div>
+
+    </div>
+
+</section>
 
         <!-- Collection Section -->
         <section id="collection" class="bg-white pt-8 pb-14 md:pt-16 md:pb-20 px-6 text-center">
