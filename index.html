@@ -848,8 +848,70 @@
                     </div>
                       
                     <!-- MAPS -->
-                    <div class="w-full aspect-[16/9] rounded-2xl overflow-hidden shadow-lg mb-5 animate-fade-up">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248.23794954496933!2d105.30503457517315!3d-5.4462181642392125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e40db006845c3e1%3A0xa530153427aae886!2sPiksma%20Media!5e0!3m2!1sid!2sid!4v1783176418955!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="Lokasi Piksma Media di Google Maps"></iframe>
+                    <div class="relative overflow-hidden rounded-3xl shadow-xl animate-fade-up">
+
+                        <!-- Google Maps -->
+                        <iframe
+                            class="w-full h-[200px] md:h-[220px] lg:h-[230px]"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248.23794954496933!2d105.30503457517315!3d-5.4462181642392125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e40db006845c3e1%3A0xa530153427aae886!2sPiksma%20Media!5e0!3m2!1sid!2sid!4v1783176418955!5m2!1sid!2sid"
+                            style="border:0;"
+                            loading="lazy"
+                            allowfullscreen
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            title="Lokasi Piksma Media">
+                        </iframe>
+
+                        <!-- Gradient -->
+                        <div class="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+
+                        <!-- Info -->
+                        <div class="absolute bottom-4 left-4 right-4">
+
+                            <div class="bg-neutral-900/75 backdrop-blur-md rounded-2xl px-4 py-3 shadow-lg">
+
+                                <div class="flex items-center gap-3">
+
+                                    <!-- Icon -->
+                                    <div class="flex items-center justify-center w-9 h-9 rounded-full bg-red-500/20">
+
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            class="w-4 h-4 text-red-500"
+                                            fill="currentColor"
+                                            viewBox="0 0 20 20">
+
+                                            <path fill-rule="evenodd"
+                                                d="M10 2a6 6 0 016 6c0 4.5-6 10-6 10S4 12.5 4 8a6 6 0 016-6z"
+                                                clip-rule="evenodd"/>
+
+                                        </svg>
+
+                                    </div>
+
+                                    <!-- Text -->
+                                    <div>
+
+                                        <h5 class="text-white text-base font-semibold">
+                                            Piksma Media
+                                        </h5>
+
+                                        <p class="text-xs text-gray-300">
+                                            Jl. Pinang, Ketapang, Telukbetung Selatan,<br>
+                                            Bandar Lampung
+                                        </p>
+
+                                        <div class="flex items-center gap-2 mt-1">
+                                            <span class="text-yellow-400 text-xs">★★★★★</span>
+                                            <span class="text-gray-400 text-xs">Google Maps</span>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
                     </div>
                       
                       <!-- TOMBOL ala Mac -->
