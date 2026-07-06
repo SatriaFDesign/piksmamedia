@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://satriafdesign.my.id/sitemap.xml
+Sitemap: https://piksmamedia.com/sitemap.xml
